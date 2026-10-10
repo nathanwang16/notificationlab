@@ -1,0 +1,34 @@
+{
+  "attributes": {
+    "AXDescription": "NotificationLab Sender, NotificationLab Test 1, Capture test — smoke, LAB-AC2A8E22-0001 — synthetic notification 1; no external message was sent.",
+    "AXIdentifier": "CAFDD230-D5D9-4A7B-B55D-B8AD112EDC56",
+    "AXRole": "AXGroup",
+    "AXSubrole": "AXNotificationCenterBanner"
+  },
+  "children": [
+    {
+      "attributes": {
+        "AXIdentifier": "title",
+        "AXRole": "AXStaticText",
+        "AXValue": "NotificationLab Test 1"
+      },
+      "children": []
+    },
+    {
+      "attributes": {
+        "AXIdentifier": "subtitle",
+        "AXRole": "AXStaticText",
+        "AXValue": "Capture test — smoke"
+      },
+      "children": []
+    },
+    {
+      "attributes": {
+        "AXIdentifier": "body",
+        "AXRole": "AXStaticText",
+        "AXValue": "LAB-AC2A8E22-0001 — synthetic notification 1; no external message was sent."
+      },
+      "children": []
+    }
+  ]
+}

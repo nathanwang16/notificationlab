@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "capture_version": "0.2.0",
+  "summary_updated_on": "2026-10-10",
+  "live_tests_performed_on": "2026-10-09",
+  "environment": {
+    "architecture": "arm64",
+    "chip": "Apple M1 Max",
+    "macos": "27.0.1",
+    "macos_build": "26A434",
+    "xcode": "27.0",
+    "xcode_build": "27A266a",
+    "swift": "6.4",
+    "deployment_target": "macOS 14.0"
+  },
+  "fixture_checks_passed": 58,
+  "native_lifecycle_checks_passed": 15,
+  "synthetic_notification_settings": {
+    "alert_style": "persistent",
+    "previews": "always",
+    "grouping": "off"
+  },
+  "synthetic_runs": [
+    {
+      "mode": "smoke",
+      "requested": 5,
+      "retained_delivery_ids_observed": 5,
+      "database_unique_ids": 5,
+      "accessibility_matched_request_ids": 5,
+      "database_exact_delivered_payload_count": 5,
+      "accessibility_exact_delivered_payload_count": 5,
+      "database_latency_seconds": {
+        "count": 5,
+        "median": 7.289,
+        "p95": 9.292,
+        "max": 9.292
+      },
+      "accessibility_latency_seconds": {
+        "count": 5,
+        "median": 0.533,
+        "p95": 1.558,
+        "max": 1.558
+      }
+    },
+    {
+      "mode": "baseline",
+      "requested": 20,
+      "retained_delivery_ids_observed": 20,
+      "database_unique_ids": 20,
+      "accessibility_matched_request_ids": 20,
+      "database_exact_delivered_payload_count": 20,
+      "accessibility_exact_delivered_payload_count": 20,
+      "database_latency_seconds": {
+        "count": 20,
+        "median": 15.352,
+        "p95": 23.859,
+        "max": 24.852
+      },
+      "accessibility_latency_seconds": {
+        "count": 20,
+        "median": 0.482,
+        "p95": 0.72,
+        "max": 0.878
+      }
+    },
+    {
+      "mode": "burst",
+      "requested": 20,
+      "retained_delivery_ids_observed": 20,
+      "database_unique_ids": 20,
+      "accessibility_matched_request_ids": 20,
+      "database_exact_delivered_payload_count": 20,
+      "accessibility_exact_delivered_payload_count": 20,
+      "database_latency_seconds": {
+        "count": 20,
+        "median": 9.223,
+        "p95": 10.926,
+        "max": 11.124
+      },
+      "accessibility_latency_seconds": {
+        "count": 20,
+        "median": 1.145,
+        "p95": 1.578,
+        "max": 1.633
+      }
+    },
+    {
+      "mode": "identical",
+      "requested": 2,
+      "retained_delivery_ids_observed": 2,
+      "database_unique_ids": 2,
+      "accessibility_matched_request_ids": 2,
+      "database_exact_delivered_payload_count": 2,
+      "accessibility_exact_delivered_payload_count": 2,
+      "database_latency_seconds": {
+        "count": 2,
+        "median": 6.286,
+        "p95": 7.034,
+        "max": 7.034
+      },
+      "accessibility_latency_seconds": {
+        "count": 2,
+        "median": 0.668,
+        "p95": 0.951,
+        "max": 0.951
+      }
+    },
+    {
+      "mode": "long",
+      "requested": 1,
+      "retained_delivery_ids_observed": 1,
+      "database_unique_ids": 1,
+      "accessibility_matched_request_ids": 1,
+      "database_exact_delivered_payload_count": 1,
+      "accessibility_exact_delivered_payload_count": 1,
+      "database_latency_seconds": {
+        "count": 1,
+        "median": 6.189,
+        "p95": 6.189,
+        "max": 6.189
+      },
+      "accessibility_latency_seconds": {
+        "count": 1,
+        "median": 1.544,
+        "p95": 1.544,
+        "max": 1.544
+      }
+    }
+  ],
+  "durable_feed": {
+    "events": 48,
+    "unique_request_ids": 48,
+    "unique_notification_ids": 48,
+    "unique_sequences": 48,
+    "exact_delivered_payloads": 48,
+    "all_fields_have_retrieval_identity": true
+  },
+  "live_restart": {
+    "recovered_events": 5,
+    "unique_request_ids": 5,
+    "retained_delivery_ids": 5,
+    "delivered_before_relaunch": 5,
+    "exact_delivered_payloads": 5,
+    "feed_events_before": 48,
+    "feed_events_after": 53,
+    "previous_events_preserved": 48,
+    "no_stale_start_command_replay": true,
+    "relaunch_kept_permissions": true,
+    "healthy_after_relaunch": true,
+    "actual_notification_database_test": true
+  },
+  "real_discord": {
+    "prototype": {
+      "observed_unique_notifications": 5,
+      "exact_title_and_body_matches": 5,
+      "database_latency_seconds": {
+        "min": 5.473,
+        "median": 5.605,
+        "max": 10.883
+      }
+    },
+    "hardened": {
+      "capture_version": "0.2.0",
+      "observed_unique_notifications": 6,
+      "matched_ax_uuid_count": 6,
+      "exact_titles_and_bodies_across_feed_and_both_journals": 6,
+      "empty_db_subtitle_with_absent_ax_field": 6,
+      "database_latency_seconds": {
+        "count": 6,
+        "min": 5.429,
+        "median": 5.554,
+        "max": 5.598
+      },
+      "independent_source_message_count_known": false,
+      "note": "Observed notification payloads, not a guarantee of all source message delivery. No text, IDs, hashes, timestamps or host paths are included.",
+      "accessibility_first_observation_latency_seconds": {
+        "count": 6,
+        "min": 0.601,
+        "median": 2434.423,
+        "max": 2640.685
+      },
+      "accessibility_raw_observations": 8,
+      "database_raw_observations": 6,
+      "accessibility_observations_may_repeat_after_card_redisplay": true
+    },
+    "initial_hardened_two_notifications": {
+      "observed_unique_notifications": 2,
+      "title_and_body_matches": 2,
+      "database_delay_seconds": [
+        5.495,
+        5.59
+      ],
+      "accessibility_delay_seconds": [
+        0.601,
+        0.606
+      ]
+    },
+    "total_observed_across_versions": 11
+  },
+  "earlier_temporary_alerts_automatic_grouping": {
+    "database_captured": 48,
+    "accessibility_captured": 33,
+    "requested": 48,
+    "burst_requested": 20,
+    "burst_accessibility_captured": 5
+  },
+  "persistent_alert_parser_before_fix": {
+    "database_captured": 40,
+    "accessibility_captured": 0,
+    "requested": 40,
+    "reason": "Persistent cards use AXNotificationCenterAlert, not AXNotificationCenterBanner."
+  },
+  "long_unicode_notification": {
+    "requested_characters": 2211,
+    "delivered_characters": 1999
+  },
+  "limits": [
+    "Latency is measured from macOS notification delivery to observation, not from Discord message send time.",
+    "Only notifications delivered to macOS can be retrieved; previews and source suppression can limit content.",
+    "Real Discord arrivals were uncontrolled: an independent count of expected source messages was unavailable.",
+    "Additional AX observations were delayed until cards became accessible; four later notifications were first observed about 21–44 minutes after delivery. Cause was not established.",
+    "AX journal observations can repeat when a notification card is redisplayed; the durable feed uses the database and deduplicates persistently.",
+    "The notification database format is undocumented and may change with macOS updates."
+  ],
+  "not_yet_validated": [
+    "A controlled Discord test with independently known source text and send time.",
+    "Mini GUI login/logout, whole-machine reboot and launchd crash recovery.",
+    "Foreground suppression, Focus, lock/display sleep and reconnect behavior.",
+    "A continuous 24–48-hour soak and long-term storage growth."
+  ],
+  "publication_note": "Aggregate measurements only. Captured messages, sender names, notification IDs, message hashes, exact event timestamps, host paths and live status inventories are excluded."
+}

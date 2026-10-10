@@ -1,0 +1,59 @@
+PASS: first notification is posted
+PASS: identical text with different identity is preserved
+PASS: unchanged observation is not emitted twice
+PASS: changed payload is an update
+PASS: retained history is baseline only
+PASS: baseline notification can later update
+PASS: binary plist retains Unicode, multiline and long text
+PASS: request identifier extracted separately
+PASS: test marker detected
+PASS: recorded live banner identifies sender by app label
+PASS: recorded AX banner is extracted as one card
+PASS: recorded persistent alert has a distinct OS subrole
+PASS: recorded persistent alert is extracted independently of banner subrole
+PASS: Discord-only allowlist excludes sender banner
+PASS: recorded AX title and subtitle fields decoded
+PASS: recorded AX body is separate from aggregate description
+PASS: Discord app label prefix is recognized
+PASS: AX source aliases normalize to one Discord identifier
+PASS: Discord mentioned in another app's message is not a source match
+PASS: invalid payload throws
+PASS: fixture database opens
+PASS: fixture schema created
+PASS: source fixture uses WAL like a live SQLite writer
+PASS: database probe seeds existing row without capture
+PASS: probe opens the database read-only
+PASS: database probe captures newly inserted identical-content row
+PASS: database scan does not duplicate unchanged row
+PASS: database detects revision of existing notification
+PASS: unrelated source fixture inserted
+PASS: source allowlist excludes unrelated notification content
+PASS: source case alias fixture applied
+PASS: SQL source matching and notification identity are case-insensitive
+PASS: fresh process recovers a message delivered while the previous reader was stopped
+PASS: second process restart does not replay captured messages
+PASS: messages survive process exit in a durable feed
+PASS: original process sees worker checkpoint and does not duplicate recovery
+PASS: replacement fixture opens
+PASS: replacement database retains existing UUIDs and timestamps
+PASS: source database is atomically replaced while reader has it open
+PASS: reader reconnects after file replacement without replaying retained UUIDs
+PASS: writer reconnects after replacement
+PASS: reader captures new content after database replacement
+PASS: fault-injection connection opens only the disposable capture state
+PASS: durable write failure injected
+PASS: failed commit is reported and does not emit a message
+PASS: durable write fault removed
+PASS: next scan recovers the message after a failed commit
+PASS: recovered commit is not duplicated
+PASS: malformed source records report degraded capture without advancing identity
+PASS: repaired malformed notification remains retrievable
+PASS: retention does not suppress newly retrieved messages
+PASS: durable payload retention is bounded
+PASS: deduplication survives payload retention cleanup
+PASS: feed sequence stays monotonic when old payloads expire
+PASS: stop state, source filter and consumed command survive relaunch
+PASS: journal rotation retains only active file and configured archives
+PASS: rotation keeps the newest complete JSON record
+PASS: second collector cannot own the same directory
+58 checks passed
